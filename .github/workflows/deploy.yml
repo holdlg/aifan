@@ -25,10 +25,12 @@ jobs:
       - name: Build
         run: npm run aifan:build
       - name: config1
-        run: mkdir -p aifan/.vitepress/dist/aifan/
+        run: mkdir -p aifan/.vitepress/aifan/
       - name: config2
-        run: mv aifan/.vitepress/dist/* aifan/.vitepress/dist/aifan/
+        run: mv aifan/.vitepress/dist/* aifan/.vitepress/aifan/
       - name: config3
+        run: mv aifan/.vitepress/aifan aifan/.vitepress/dist/
+      - name: config4
         run: mv aifan/.vitepress/dist/aifan/index.html aifan/.vitepress/dist/
       - uses: actions/configure-pages@v2
       - uses: actions/upload-pages-artifact@v1
