@@ -2,6 +2,7 @@
   "name": "aifan",
   "version": "2.2",
   "description": "爱反垃圾堆",
+  "homepage": "https://dev.zmsk.co",
   "main": "index.js",
   "scripts": {
     "aifan:dev": "vitepress dev aifan",
