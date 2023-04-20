@@ -40,8 +40,8 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'ICP备案号：<a href="https://beian.miit.gov.cn/" target="_blank">豫ICP备19045526号-1</a>',
-      copyright: '版权 © 2023 <a href="https://fir8.com/" target="_blank">菲艾若芭</a>'
+      message: '路虽远，行则将至',
+      copyright: '版权 © 2023 <a href="https://dev.zmsk.co/" target="_blank">dev.zmsk.co</a>'
     }
   }
 })
