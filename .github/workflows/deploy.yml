@@ -27,7 +27,7 @@ jobs:
       - name: config1
         run: mkdir -p aifan/.vitepress/dist/aifan
       - name: config2
-        run: mv mkdir -p aifan/.vitepress/dist/* aifan/.vitepress/dist/aifan
+        run: mv aifan/.vitepress/dist/* aifan/.vitepress/dist/aifan
       - name: config3
         run: mv aifan/.vitepress/dist/aifan/index.html aifan/.vitepress/dist/
       - uses: actions/configure-pages@v2
