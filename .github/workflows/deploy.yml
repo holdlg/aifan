@@ -23,7 +23,7 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Build
-        run: npm run aifan:build && BASE='/' npm run aifan:build
+        run: npm run aifan:build && BASE='/aifan/' npm run aifan:build
       - uses: actions/configure-pages@v2
       - uses: actions/upload-pages-artifact@v1
         with:
