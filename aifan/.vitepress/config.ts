@@ -6,6 +6,7 @@ import { programPython, programRust, programGolang, programWeb } from './sidebar
 import { orange } from './sidebar/orange'
 
 export default defineConfig({
+  base: '/aifan/',
   title: '爱反垃圾堆',
   titleTemplate: ':title 🌱 菲艾若芭',
   lang: 'zh-CN',
