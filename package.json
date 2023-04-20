@@ -1,0 +1,20 @@
+{
+  "name": "aifan",
+  "version": "2.2",
+  "description": "爱反垃圾堆",
+  "main": "index.js",
+  "scripts": {
+    "aifan:dev": "vitepress dev aifan",
+    "aifan:build": "vitepress build aifan",
+    "aifan:serve": "vitepress serve aifan"
+  },
+  "keywords": [
+    "fir8"
+  ],
+  "author": "fir8",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "1.0.0-alpha.72",
+    "vue": "^3.2.47"
+  }
+}
