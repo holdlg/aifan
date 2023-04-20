@@ -7,7 +7,6 @@ import { orange } from './sidebar/orange'
 
 export default defineConfig({
   base: '/aifan/',
-  outDir: './.vitepress/dist/aifan/',
   title: '爱反垃圾堆',
   titleTemplate: ':title 🌱 菲艾若芭',
   lang: 'zh-CN',
