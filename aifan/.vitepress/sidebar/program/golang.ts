@@ -1,27 +1,27 @@
-export default function programGolang() {
+export default function codingGolang() {
   return [
     {
       text: 'Golang',
       collapsible: true,
       collapsed: false,
       items: [
-        { text: 'Go 字符串', link: '/program/golang/Go 字符串' },
-        { text: 'Go build', link: '/program/golang/Go build' },
-        { text: 'Go Module', link: '/program/golang/Go Module' },
-        { text: 'Go Bug', link: '/program/golang/Go Bug' },
-        { text: 'Go 多态', link: '/program/golang/Go 多态' },
-        { text: 'Go 继承', link: '/program/golang/Go 继承' },
-        { text: '环境变量', link: '/program/golang/环境变量' },
-        { text: '进制转换', link: '/program/golang/进制转换' },
-        { text: '随机字符串', link: '/program/golang/随机字符串' },
-        { text: '批量重命名文件', link: '/program/golang/批量重命名文件' }
+        { text: 'Go 字符串', link: '/coding/golang/Go 字符串' },
+        { text: 'Go build', link: '/coding/golang/Go build' },
+        { text: 'Go Module', link: '/coding/golang/Go Module' },
+        { text: 'Go Bug', link: '/coding/golang/Go Bug' },
+        { text: 'Go 多态', link: '/coding/golang/Go 多态' },
+        { text: 'Go 继承', link: '/coding/golang/Go 继承' },
+        { text: '环境变量', link: '/coding/golang/环境变量' },
+        { text: '进制转换', link: '/coding/golang/进制转换' },
+        { text: '随机字符串', link: '/coding/golang/随机字符串' },
+        { text: '批量重命名文件', link: '/coding/golang/批量重命名文件' }
       ]
     },
     {
       text: 'Gin',
       collapsible: true,
       collapsed: false,
-      items: [{ text: 'Gin Cors', link: '/program/golang/Gin Cors' }]
+      items: [{ text: 'Gin Cors', link: '/coding/golang/Gin Cors' }]
     }
   ]
 }

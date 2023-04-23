@@ -1,11 +1,10 @@
-
 # [Docker] 离线镜像
 
-## 安装docker
+## 安装 docker
 
 参考官方网站一步一步来就行了。
 
-[Get Docker Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1 "Get Docker Ubuntu")
+[Get Docker Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1 'Get Docker Ubuntu')
 
 重要操作如下：
 
@@ -26,7 +25,7 @@ sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
-   
+
 sudo apt-get update
 
 sudo apt-get install docker-ce
@@ -48,31 +47,31 @@ docker run -p 10000:10000 -p 80:80 -p 3000:3000 -p 8089:8089 --name mhn -t -i ub
 
 ## 安装程序
 
-可以使用命令，这里写成shell 脚本了,然后运行脚本。
+可以使用命令，这里写成 shell 脚本了,然后运行脚本。
 
-vi /opt/init\_mhn.sh
+vi /opt/init_mhn.sh
 
 ```bash
 #!/bin/bash
 
 set -x
 
-apt-get update 
-apt-get upgrade -y 
-apt-get install git wget gcc supervisor -y 
-cd /opt/ 
-git clone https://github.com/threatstream/mhn.git 
+apt-get update
+apt-get upgrade -y
+apt-get install git wget gcc supervisor -y
+cd /opt/
+git clone https://github.com/threatstream/mhn.git
 cd mhn
 
 cat > /etc/supervisor/conf.d/mhntodocker.conf <<EOF
-[program:mongod]
+[coding:mongod]
 command=/usr/bin/mongod
-stdout_logfile=/var/log/supervisor/%(program_name)s.log
-stderr_logfile=/var/log/supervisor/%(program_name)s.log
+stdout_logfile=/var/log/supervisor/%(coding_name)s.log
+stderr_logfile=/var/log/supervisor/%(coding_name)s.log
 autorestart=true
 autostart=true
 
-[program:nginx]
+[coding:nginx]
 command=/usr/sbin/nginx
 stdout_events_enabled=true
 stderr_events_enabled=true
@@ -105,7 +104,7 @@ docker commit eafd9111ada6 mhn
 
 参考链接：
 
-[docker commit](http://www.runoob.com/w3cnote/docker-use-container-create-image.html "docker commit")
+[docker commit](http://www.runoob.com/w3cnote/docker-use-container-create-image.html 'docker commit')
 
 ## 导出/保存镜像
 
@@ -147,4 +146,4 @@ docker load -i /root/mhn
 docker images
 ```
 
-ok.. 现在可以正常使用离线部署的docker镜像了。
+ok.. 现在可以正常使用离线部署的 docker 镜像了。

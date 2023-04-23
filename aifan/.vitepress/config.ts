@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 import { appDocker, appElasticsearch, appKubernets, appPulsar, appMore, appGit } from './sidebar/app'
 import { osCentOS, osUbuntu, osWindows } from './sidebar/os'
-import { programPython, programRust, programGolang, programWeb } from './sidebar/program'
+import { codingPython, codingRust, codingGolang, codingWeb } from './sidebar/coding'
 import { orange } from './sidebar/orange'
 
 export default defineConfig({
@@ -29,10 +29,10 @@ export default defineConfig({
       '/app/pulsar/': appPulsar(),
       '/app/git/': appGit(),
       '/app/more/': appMore(),
-      '/program/golang/': programGolang(),
-      '/program/python/': programPython(),
-      '/program/rust/': programRust(),
-      '/program/web/': programWeb(),
+      '/coding/golang/': codingGolang(),
+      '/coding/python/': codingPython(),
+      '/coding/rust/': codingRust(),
+      '/coding/web/': codingWeb(),
       '/os/centos/': osCentOS(),
       '/os/ubuntu/': osUbuntu(),
       '/os/windows/': osWindows(),
@@ -83,19 +83,19 @@ function nav() {
       items: [
         {
           text: 'Golang',
-          link: '/program/golang/index.md'
+          link: '/coding/golang/index.md'
         },
         {
           text: 'Python',
-          link: '/program/python/index.md'
+          link: '/coding/python/index.md'
         },
         {
           text: 'Web',
-          link: '/program/web/index.md'
+          link: '/coding/web/index.md'
         },
         {
           text: 'Rust',
-          link: '/program/rust/index.md'
+          link: '/coding/rust/index.md'
         }
       ]
     },

@@ -21,7 +21,7 @@
 
 /sbin           放置一些系统管理常用的程序；如：fdisk,mke2fs,mount等；
 
-/usr            里边放置程序和指令；例示windows的programfiles 目录。
+/usr            里边放置程序和指令；例示windows的codingfiles 目录。
 
 /usr/bin        放置可执行程序；
 

@@ -1,6 +1,6 @@
-import programGolang from './golang'
-import programPython from './python'
-import programRust from './rust'
-import programWeb from './web'
+import codingGolang from './golang'
+import codingPython from './python'
+import codingRust from './rust'
+import codingWeb from './web'
 
-export { programPython, programRust, programGolang, programWeb }
+export { codingPython, codingRust, codingGolang, codingWeb }
