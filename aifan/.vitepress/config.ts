@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
-import { appDocker, appElasticsearch, appKubernets, appPulsar, appMore, appGit } from './sidebar/app'
+import { appElasticsearch, appPulsar, appMore, appGit } from './sidebar/app'
+import { devopsDocker, devopsKubernets } from './sidebar/devops'
 import { osCentOS, osUbuntu, osWindows } from './sidebar/os'
 import { codingPython, codingRust, codingGolang, codingWeb } from './sidebar/coding'
 import { orange } from './sidebar/orange'
@@ -23,9 +24,9 @@ export default defineConfig({
     nav: nav(),
 
     sidebar: {
-      '/app/docker/': appDocker(),
+      '/devops/docker/': devopsDocker(),
+      '/devops/kubernetes/': devopsKubernets(),
       '/app/elastic/': appElasticsearch(),
-      '/app/kubernetes/': appKubernets(),
       '/app/pulsar/': appPulsar(),
       '/app/git/': appGit(),
       '/app/more/': appMore(),
@@ -50,19 +51,24 @@ function nav() {
   return [
     { text: '首页 🎀', link: '/index.md', activeMatch: '/home/' },
     {
-      text: '应用 🎈',
+      text: 'DevOps 🐦',
       items: [
         {
           text: 'Kubernetes',
-          link: '/app/kubernetes/index.md'
-        },
-        {
-          text: 'Elasticsearch',
-          link: '/app/elastic/index.md'
+          link: '/devops/kubernetes/index.md'
         },
         {
           text: 'Docker',
-          link: '/app/docker/index.md'
+          link: '/devops/docker/index.md'
+        }
+      ]
+    },
+    {
+      text: '应用 🎈',
+      items: [
+        {
+          text: 'Elasticsearch',
+          link: '/app/elastic/index.md'
         },
         {
           text: 'Pulsar',
