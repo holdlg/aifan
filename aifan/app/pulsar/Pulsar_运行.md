@@ -53,3 +53,13 @@ docker run --name pulsar2  \
   sh -c "bin/apply-config-from-env.py conf/standalone.conf && bin/pulsar standalone"
 
 ```
+
+
+# 1000
+```bash
+docker run --name pulsar -d -p 6651:6651    -p 8443:8443    -v /root/pulsar/data:/pulsar/data  -e PULSAR_PREFIX_maxConcurrentNonPersistentMessagePerConnection=100000 -e PULSAR_PREFIX_brokerServicePortTls=6651   -e PULSAR_PREFIX_webServicePortTls=8443   -e PULSAR_PREFIX_tlsEnabled=true   -e PULSAR_PREFIX_tlsCertificateFilePath=/pulsar/data/my-ca/broker.cert.pem   -e PULSAR_PREFIX_tlsKeyFilePath=/pulsar/data/my-ca/broker.key-pk8.pem   -e PULSAR_PREFIX_tlsTrustCertsFilePath=/pulsar/data/my-ca/certs/ca.cert.pem   apachepulsar/pulsar:2.10.4   sh -c "bin/apply-config-from-env.py conf/standalone.conf && bin/pulsar standalone"
+```
+
+```bash
+docker run --name pulsar -d -p 6651:6651    -p 8443:8443    -v /root/pulsar/data:/pulsar/data   -e PULSAR_PREFIX_brokerServicePortTls=6651   -e PULSAR_PREFIX_webServicePortTls=8443   -e PULSAR_PREFIX_tlsEnabled=true   -e PULSAR_PREFIX_tlsCertificateFilePath=/pulsar/data/my-ca/broker.cert.pem   -e PULSAR_PREFIX_tlsKeyFilePath=/pulsar/data/my-ca/broker.key-pk8.pem   -e PULSAR_PREFIX_tlsTrustCertsFilePath=/pulsar/data/my-ca/certs/ca.cert.pem   apachepulsar/pulsar:2.10.4   sh -c "bin/apply-config-from-env.py conf/standalone.conf && bin/pulsar standalone"
+```

@@ -5,6 +5,7 @@ export default function appPulsar() {
       collapsible: true,
       collapsed: false,
       items: [
+        { text: 'Pulsar_Admin', link: '/app/pulsar/Pulsar_Admin' },
         { text: 'Pulsar_TLS', link: '/app/pulsar/Pulsar_TLS' },
         { text: 'Pulsar_运行', link: '/app/pulsar/Pulsar_运行' },
         { text: 'Pulsar_延迟推送', link: '/app/pulsar/Pulsar_延迟推送' },

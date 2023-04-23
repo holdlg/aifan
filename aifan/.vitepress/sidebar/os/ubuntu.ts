@@ -5,6 +5,7 @@ export default function osUbuntu() {
       collapsible: true,
       collapsed: false,
       items: [
+        { text: '启用root', link: '/os/ubuntu/22/Ubuntu22_启用root' },
         { text: '安装docker', link: '/os/ubuntu/22/Ubuntu22_安装docker' },
         { text: '设置静态IP', link: '/os/ubuntu/22/Ubuntu22_静态IP' },
         { text: '修改源', link: '/os/ubuntu/22/Ubuntu22_修改源' }
