@@ -5,6 +5,7 @@ export default function codingGolang() {
       collapsible: true,
       collapsed: false,
       items: [
+        { text: 'Go toml', link: '/coding/golang/Go toml' },
         { text: 'Go 字符串', link: '/coding/golang/Go 字符串' },
         { text: 'Go build', link: '/coding/golang/Go build' },
         { text: 'Go Module', link: '/coding/golang/Go Module' },
@@ -21,7 +22,11 @@ export default function codingGolang() {
       text: 'Gin',
       collapsible: true,
       collapsed: false,
-      items: [{ text: 'Gin Cors', link: '/coding/golang/Gin Cors' }]
+      items: [
+        { text: 'Gin API', link: '/coding/golang/Gin API' },
+        { text: 'Gin Cors', link: '/coding/golang/Gin Cors' },
+        { text: 'Gorm Pool', link: '/coding/golang/Gorm' }
+      ]
     }
   ]
 }

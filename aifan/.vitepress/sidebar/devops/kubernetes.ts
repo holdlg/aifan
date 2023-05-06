@@ -37,9 +37,12 @@ export default function devopsKubernetes() {
       collapsible: true,
       collapsed: true,
       items: [
+        { text: 'Nacos', link: '/devops/nacos' },
+        { text: 'Drone', link: '/devops/drone' },
         { text: 'Harbor', link: '/devops/kubernetes/Harbor' },
         { text: 'helm', link: '/devops/kubernetes/helm' },
         { text: 'KubeSphere', link: '/devops/kubernetes/KubeSphere' }
+        
       ]
     },
     {
