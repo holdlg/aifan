@@ -22,8 +22,10 @@ jobs:
           node-version: 16
           cache: npm
       - run: npm ci
+      - name: install
+        run: npm install -g pnpm
       - name: Build
-        run: npm run aifan:build
+        run: pnpm run aifan:build
       - name: config1
         run: mkdir -p aifan/.vitepress/aifan/
       - name: config2

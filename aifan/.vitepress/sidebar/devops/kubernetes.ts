@@ -7,7 +7,8 @@ export default function devopsKubernetes() {
       items: [
         { text: 'k8s与containerd', link: '/devops/kubernetes/k8s与containerd' },
         { text: 'k8s_v1.25调试记录', link: '/devops/kubernetes/k8s_v1.25调试记录' },
-        { text: 'k8s与docker', link: '/devops/kubernetes/k8s与docker' }
+        { text: 'k8s与docker', link: '/devops/kubernetes/k8s与docker' },
+        { text: 'k8s与ubuntu22', link: '/devops/kubernetes/kubernetes_ubuntu22' }
       ]
     },
     {
@@ -42,7 +43,6 @@ export default function devopsKubernetes() {
         { text: 'Harbor', link: '/devops/kubernetes/Harbor' },
         { text: 'helm', link: '/devops/kubernetes/helm' },
         { text: 'KubeSphere', link: '/devops/kubernetes/KubeSphere' }
-        
       ]
     },
     {
